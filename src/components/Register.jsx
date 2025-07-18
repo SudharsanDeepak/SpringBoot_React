@@ -32,7 +32,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://springboot-intern-rjt3.onrender.com/api/auth/register', {
+      await axios.post('https://springbootproject-q5gi.onrender.com/api/auth/register', {
         ...formData,
       });
       alert('Registered Successfully!');

@@ -27,7 +27,7 @@ const Navbar = () => {
   try {
     console.log(searchQuery)
     const token = localStorage.getItem("token");
-    const response = await axios.get(`https://springboot-intern-rjt3.onrender.com/api/employees/name/${searchQuery}`, {
+    const response = await axios.get(`https://springbootproject-q5gi.onrender.com/api/employees/name/${searchQuery}`, {
       headers: { Authorization: `Bearer ${token}` }
     });
     setSearchResult(response.data);
